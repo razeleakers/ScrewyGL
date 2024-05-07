@@ -31,6 +31,9 @@ git clone https://github.com/razeleakers/ScrewyGL.git
 - GL_QUADS
 - GL_POLYGON
 
+<p>Don't worry about the code, ScrewyGL will generate it for you!</p>
+<p><img src="/images/result.png" alt="result"></p>
+
 <p>The only limit is your imagination!</p>
 
 <div style="display:flex;">
