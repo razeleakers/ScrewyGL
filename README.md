@@ -1,4 +1,4 @@
-<h2 align="center">ScrewyGL v1.0</h2>
+<h2 align="center">ScrewyGL v1.1</h2>
 
 ## Table of Contents
 
