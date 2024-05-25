@@ -1,4 +1,5 @@
-<h2 align="center">ScrewyGL v1.1</h2>
+<h1 align="center"><img src="/images/ScrewyGL.png" alt="ScrewyGL"></h1>
+<h2 align="center">ScrewyGL v2.0</h2>
 
 ## Table of Contents
 
@@ -18,17 +19,31 @@
 git clone https://github.com/razeleakers/ScrewyGL.git
 
 ```
+#### Dependencies
+
+<p>Go to Tools -> NuGet Package Manager -> Package Manager Console</p>
+
+```
+Update-Package -Reinstall
+
+```
 
 ## Usage
 
-<p>You can draw directly on the canvas or insert your custom image</p>
+<p>You can draw directly on the left scene/panel</p>
 <p>Select the color you prefer and bring your drawings to life!</p>
-<p>You can make use of 5 drawing options that OpenGL has (I will add more soon)</p>
+<p>With real-time drawing, you can see your draw appear instantly on your screen (NEW!)</p>
+<p>You can make use of some types of drawing 2D that OpenGL has</p>
+<p></p>
 
 - GL_LINES
 - GL_LINE_LOOP
+- GL_LINE_STRIP (NEW!)
 - GL_TRIANGLES
+- GL_TRIANGLE_STRIP (NEW!)
+- GL_TRIANGLE_FAN (NEW!)
 - GL_QUADS
+- GL_TRIANGLE_STRIP (NEW!)
 - GL_POLYGON
 
 <p>Don't worry about the code, ScrewyGL will generate it for you!</p>
@@ -36,10 +51,11 @@ git clone https://github.com/razeleakers/ScrewyGL.git
 
 <p>The only limit is your imagination!</p>
 
-<div style="display:flex;">
-  <img src="/images/example1.png" alt="example1" style="width:45%;">
-  <img src="/images/example2.png" alt="example2" style="width:45%;">
-</div>
+<img src="/images/example1.png" alt="example1">
+
+<p>Now supports 3D drawings!</p>
+
+<img src="/images/example2.png" alt="example2">
 
 ##
 
