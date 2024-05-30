@@ -398,6 +398,23 @@ namespace ScrewyGL.Draw3D
                     "float cameraPosZ = 60;\n" +
                     "float cameraAngle = 114;\n\n" +
 
+                    "void Light() {\n" +
+                    "GLfloat l_ambient[] = { 0.25,0.25,0.25,1 };\n" +
+                    "GLfloat l_diffuse[] = { 0.8,0.8,0.8,1 };\n" +
+                    "GLfloat l_specular[] = { 0.3,0.3,0.3,1 };\n" +
+                    "float posLight[] = { 0,70,60,1 };\n\n" +
+                    "glLightModelfv(GL_LIGHT_MODEL_AMBIENT, l_ambient);\n" +
+                    "glLightfv(GL_LIGHT0, GL_AMBIENT, l_ambient);\n" +
+                    "glLightfv(GL_LIGHT0, GL_DIFFUSE, l_diffuse);\n" +
+                    "glLightfv(GL_LIGHT0, GL_SPECULAR, l_specular);\n" +
+                    "glLightfv(GL_LIGHT0, GL_POSITION, posLight);\n\n" +
+                    "glEnable(GL_LIGHTING);\n" +
+                    "glEnable(GL_LIGHT0);\n" +
+                    "glEnable(GL_DEPTH_TEST);\n" +
+                    "glEnable(GL_COLOR_MATERIAL);\n\n" +
+                    "glColorMaterial(GL_FRONT, GL_AMBIENT_AND_DIFFUSE);\n" +
+                    "}\n\n" +
+
                     "void GridLines() {\n" +
                     "glPushMatrix();\n\n" +
                     "glColor3ub(50, 50, 50);\n" +
@@ -438,9 +455,10 @@ namespace ScrewyGL.Draw3D
                     "glPopMatrix();\n" +
                     "}\n\n" +
 
-                    sb_actualContent3D.ToString() +
+                    sb_actualContent3D.ToString().TrimEnd() +
 
-                    "void LoadConfig() {\n" +
+                    "\n\nvoid LoadConfig() {\n" +
+                    "Light();\n" +
                     "glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);\n" +
                     "glMatrixMode(GL_MODELVIEW);\n" +
                     "glLoadIdentity();\n" +
@@ -463,15 +481,19 @@ namespace ScrewyGL.Draw3D
                     "void KeyBoardEvent(unsigned char key, int x, int y) {\n" +
                     "switch (key) {\n" +
                     "case 'w':\n" +
+                    "case 'W':\n" +
                     "cameraPosY += 2;\n" +
                     "break;\n" +
                     "case 's':\n" +
+                    "case 'S':\n" +
                     "cameraPosY -= 2;\n" +
                     "break;\n" +
                     "case 'a':\n" +
+                    "case 'A':\n" +
                     "cameraAngle += 2;\n" +
                     "break;\n" +
                     "case 'd':\n" +
+                    "case 'D':\n" +
                     "cameraAngle -= 2;\n" +
                     "break;\n" +
                     "}\n" +
