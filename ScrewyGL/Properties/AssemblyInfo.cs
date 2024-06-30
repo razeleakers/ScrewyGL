@@ -6,7 +6,7 @@ using System.Runtime.InteropServices;
 // set of attributes. Change these attribute values to modify the information
 // associated with an assembly.
 [assembly: AssemblyTitle("ScrewyGL")]
-[assembly: AssemblyDescription("BY M3RFR3T | ScrewyGL v2.0")]
+[assembly: AssemblyDescription("M3RFR3T | ScrewyGL v2.0")]
 [assembly: AssemblyConfiguration("")]
 [assembly: AssemblyCompany("github.com/RazeLeakers")]
 [assembly: AssemblyProduct("ScrewyGL")]
