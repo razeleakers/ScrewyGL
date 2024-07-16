@@ -55,6 +55,15 @@ Update-Package -Reinstall
 
 <p>Now supports 3D drawings!</p>
 
+<p>Movement keys: </p>
+
+- W (Up)
+- A (Left)
+- S (Down)
+- D (Right)
+- X (Zoom In)
+- Z (Zoom Out)
+
 <img src="/images/example2.png" alt="example2">
 
 ##
