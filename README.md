@@ -1,68 +1,70 @@
 <h1 align="center"><img src="/images/ScrewyGL.png" alt="ScrewyGL"></h1>
 <h2 align="center">ScrewyGL v2.0</h2>
 
-## Table of Contents
+## Tabla de contenidos
 
-- [Description](#description)
-- [Installation](#installation)
-- [Usage](#usage)
+- [Descripcion](#descripcion)
+- [Instalacion](#instalacion)
+- [Uso](#uso)
 
-## Description
+## Descripcion
 
-<p>Would you like to make drawings in OpenGL C++ without it taking you much time to do them? Well, ScrewyGL is your solution</p>
+<p>ScrewyGL se encarga de generar codigo C++ para dibujos que quieras crear en <a href="https://learnopengl.com/Getting-started/OpenGL">OpenGL</a></p>
 
-## Installation
+## Instalacion
 
-#### Clone this repository
+#### Clona este repositorio
 
 ```
 git clone https://github.com/razeleakers/ScrewyGL.git
 
 ```
-#### Dependencies
+#### Dependencias
 
-<p>Go to Tools -> NuGet Package Manager -> Package Manager Console</p>
+Ve a herramientas -> Administrador de paquetes NuGet -> Consola de administrador de paquetes
 
 ```
 Update-Package -Reinstall
 
 ```
 
-## Usage
+## Uso
 
-<p>You can draw directly on the left scene/panel</p>
-<p>Select the color you prefer and bring your drawings to life!</p>
-<p>With real-time drawing, you can see your draw appear instantly on your screen (NEW!)</p>
-<p>You can make use of some types of drawing 2D that OpenGL has</p>
+<p>Puedes hacer uso de algunos tipos de dibujos 2D que nos ofrece OpenGL:</p>
 <p></p>
 
 - GL_LINES
 - GL_LINE_LOOP
-- GL_LINE_STRIP (NEW!)
+- GL_LINE_STRIP
 - GL_TRIANGLES
-- GL_TRIANGLE_STRIP (NEW!)
-- GL_TRIANGLE_FAN (NEW!)
+- GL_TRIANGLE_STRIP
+- GL_TRIANGLE_FAN
 - GL_QUADS
-- GL_TRIANGLE_STRIP (NEW!)
+- GL_TRIANGLE_STRIP
 - GL_POLYGON
 
-<p>Don't worry about the code, ScrewyGL will generate it for you!</p>
+<p>No te preocupes por el codigo, se genera todo automaticamente:</p>
+
+- ALL: Se mostrara todo el codigo completo para la ventana y las figuras
+- ACTUAL: Solo se mostraran los metodos de las figuras que creaste
+- LAST: Solo se mostrara el metodo de la ultima figura que creaste
+
 <p><img src="/images/result.png" alt="result"></p>
 
-<p>The only limit is your imagination!</p>
+<p>Podras agregar color y ver tus dibujos en tiempo real:</p>
 
 <img src="/images/example1.png" alt="example1">
 
-<p>Now supports 3D drawings!</p>
+<p>Tiene soporte para que puedas crear figuras en 3D:</p>
 
-<p>Movement keys: </p>
+<p>Teclas de movimiento: </p>
 
-- W (Up)
-- A (Left)
-- S (Down)
-- D (Right)
-- X (Zoom In)
-- Z (Zoom Out)
+- W (Arriba)
+- A (Izquierda)
+- S (Abajo)
+- D (Derecha)
+- X (Acercarse)
+- Z (Alejarse)
 
 <img src="/images/example2.png" alt="example2">
 
