@@ -46,7 +46,7 @@ Update-Package -Reinstall
 <p>No te preocupes por el codigo, se genera todo automaticamente:</p>
 
 - ALL: Se mostrara todo el codigo completo para la ventana y las figuras
-- ACTUAL: Solo se mostraran los metodos de las figuras que creaste
+- ACTUAL: Solo se mostraran los metodos de todas las figuras que creaste
 - LAST: Solo se mostrara el metodo de la ultima figura que creaste
 
 <p><img src="/images/result.png" alt="result"></p>
