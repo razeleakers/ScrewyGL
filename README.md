@@ -9,7 +9,7 @@
 
 ## Descripcion
 
-<p>ScrewyGL se encarga de generar codigo C++ para dibujos que quieras crear en <a href="https://learnopengl.com/Getting-started/OpenGL">OpenGL</a></p>
+ScrewyGL se encarga de generar codigo C++ para dibujos que quieras crear en <a href="https://learnopengl.com/Getting-started/OpenGL">OpenGL</a>
 
 ## Instalacion
 
@@ -30,8 +30,7 @@ Update-Package -Reinstall
 
 ## Uso
 
-<p>Puedes hacer uso de algunos tipos de dibujos 2D que nos ofrece OpenGL:</p>
-<p></p>
+Puedes hacer uso de algunos tipos de dibujos 2D que nos ofrece OpenGL:
 
 - GL_LINES
 - GL_LINE_LOOP
@@ -43,21 +42,21 @@ Update-Package -Reinstall
 - GL_TRIANGLE_STRIP
 - GL_POLYGON
 
-<p>No te preocupes por el codigo, se genera todo automaticamente:</p>
+No te preocupes por el codigo, se genera todo automaticamente:
 
 - ALL: Se mostrara todo el codigo completo para la ventana y las figuras
 - ACTUAL: Solo se mostraran los metodos de todas las figuras que creaste
 - LAST: Solo se mostrara el metodo de la ultima figura que creaste
 
-<p><img src="/images/result.png" alt="result"></p>
+<img src="/images/result.png" alt="result">
 
-<p>Podras agregar color y ver tus dibujos en tiempo real:</p>
+Podras agregar color y ver tus dibujos en tiempo real:
 
 <img src="/images/example1.png" alt="example1">
 
-<p>Tiene soporte para que puedas crear figuras en 3D:</p>
+Tiene soporte para que puedas crear figuras en 3D:
 
-<p>Teclas de movimiento: </p>
+Teclas de movimiento: 
 
 - W (Arriba)
 - A (Izquierda)
