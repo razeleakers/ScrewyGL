@@ -18,7 +18,7 @@ Puedes hacer uso de algunos tipos de dibujos 2D que nos ofrece OpenGL:
 - GL_QUAD_STRIP
 - GL_POLYGON
 
-(imagen izquierda C# - imagen derecha C++)
+(dibujo izquierda C# - dibujo derecha C++)
 
 <img src="/img/draw2D.png" alt="draw2D">
 
@@ -39,7 +39,7 @@ Teclas de movimiento de la camara:
 - Z (Acercarse)
 - X (Alejarse)
 
-(imagen izquierda C# - imagen derecha C++)
+(dibujo izquierda C# - dibujo derecha C++)
 
 <img src="/img/draw3D.png" alt="draw3D">
 
