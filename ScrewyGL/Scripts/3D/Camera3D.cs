@@ -72,11 +72,7 @@ namespace ScrewyGL.Drawing
         {
             if (direction == -1)
             {
-                double dx = CenterX - EyeX;
-                double dy = CenterY - EyeY;
-                double dz = CenterZ - EyeZ;
-
-                double length = Math.Sqrt(dx * dx + dy * dy + dz * dz);
+                double length = Math.Sqrt(Math.Pow(CenterX - EyeX, 2.0d) + Math.Pow(CenterY - EyeY, 2.0d) + Math.Pow(CenterZ - EyeZ, 2.0d));
 
                 if (length <= 1.5d) return;
             }
