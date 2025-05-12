@@ -29,19 +29,13 @@ namespace ScrewyGL.Drawing.Models
 
         public string GetFigureName() => _FigureName;
 
-        protected string GetStartConfigData()
-        {
-            return $"void {GetFigureName()}() {{\r\n    glPushMatrix();\r\n\r\n    glTranslatef({_PosX},{_PosY},{_PosZ});\r\n    glRotatef({_AngleX}, 1.0f, 0.0f, 0.0f);\r\n    glRotatef({_AngleY}, 0.0f, 1.0f, 0.0f);\r\n    glRotatef({_AngleZ}, 0.0f, 0.0f, 1.0f);\r\n    glScalef({_ScaleX},{_ScaleY},{_ScaleZ});\r\n\r\n    glColor3ub({_FigureColor.R},{_FigureColor.G},{_FigureColor.B});\r\n    ";
-        }
+        protected string GetStartConfigData() => $"void {GetFigureName()}() {{\r\n    glPushMatrix();\r\n\r\n    glTranslatef({_PosX},{_PosY},{_PosZ});\r\n    glRotatef({_AngleX}, 1.0f, 0.0f, 0.0f);\r\n    glRotatef({_AngleY}, 0.0f, 1.0f, 0.0f);\r\n    glRotatef({_AngleZ}, 0.0f, 0.0f, 1.0f);\r\n    glScalef({_ScaleX},{_ScaleY},{_ScaleZ});\r\n\r\n    glColor3ub({_FigureColor.R},{_FigureColor.G},{_FigureColor.B});\r\n    ";
 
-        protected string GetFinalConfigData()
-        {
-            return $"\r\n    glPopMatrix();\r\n}}\n\n";
-        }
-
-        public abstract void RenderFigure(OpenGL sharpGL);
+        protected string GetFinalConfigData() => $"\r\n    glPopMatrix();\r\n}}\n\n";
 
         public abstract string GetFigureData();
+
+        public abstract void RenderFigure(OpenGL sharpGL);
 
         public virtual void TranslateFigure(EW_Pos3D pos, float cant)
         {
